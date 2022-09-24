@@ -19,17 +19,10 @@ function Navbar() {
   const [pressure, setPressure] = useState("");
   const [humidity, setHumidity] = useState("");
   const [spinner, setSpinner] = useState(true);
-  // let waiting;
+  
   const hourTempArray = useRef([]);
 
-  // const debounce = (func, delay) => {
-  //   if (waiting) {
-  //     clearTimeout(waiting);
-  //   }
-  //   waiting = setTimeout(function () {
-  //     func();
-  //   }, delay);
-  // };
+ 
   const sendCity = () => {
     try {
       axios
@@ -48,7 +41,7 @@ function Navbar() {
   const takeLocation = () => {
     axios
       .get(" https://ipinfo.io/json?token=52ed0181817dc8")
-      // .get("http://ip-api.com/json")
+     
       .then((response) => {
         setCity(response.data.city);
         setRegion(response.data.region);
@@ -57,7 +50,7 @@ function Navbar() {
             `https://api.openweathermap.org/data/2.5/weather?q=${response.data.city}&appid=44d2f0f421a5b483b38e2ea12704107e&units=metric`
           )
           .then((res) => {
-            // console.log(res.data, "onlocation");
+          
             sevenDays(res.data.coord.lat, res.data.coord.lon);
             let arr = [];
             let count = 3;
@@ -93,9 +86,8 @@ function Navbar() {
         console.log("Request failed.  Returned status of", status);
       });
   };
-  // const suggestion = (data) => {
-  //   console.log(data, "suggestion");
-  // };
+  
+
   const sevenDays = (lat, lon) => {
     try {
       axios
@@ -112,7 +104,7 @@ function Navbar() {
   };
 
   const detailDiv = (data1, data2, sunRise, sunSet, presure, humdity, e) => {
-    // console.log(e, "checking one day data");
+   
     let arr = [];
     let hrRise = new Date(sunRise * 1000).getHours();
     let minRise = "0" + new Date(sunRise * 1000).getMinutes();
@@ -146,9 +138,6 @@ function Navbar() {
     sendCity();
   }, []);
 
-// const handleClick = ()=> {
-//   console.log("ok")
-// }
 
 
   return spinner ? (
@@ -169,7 +158,7 @@ function Navbar() {
           value={city}
           onChange={(e) => {
             setCity(e.target.value);
-            // debounce(sendCity, 1000);
+           
           }}
         />
         
@@ -185,7 +174,7 @@ function Navbar() {
             key={e.id}
 
        
-            // onClick={handleClick }
+          
 
             onClick={() => {
               detailDiv(
@@ -277,14 +266,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* <div className="mapdiv">
-        <iframe
-          title="gmap"
-          name="gMap"
-          className="map"
-          src={`https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
-        ></iframe> 
-      </div> */}
+      
 
     </div>
   );
