@@ -1,0 +1,187 @@
+/* .searchbar{
+    display: flex;
+    width: 55%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.input{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    padding: 0px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tempIcon{
+  height: 70px;
+}
+.searchIcon{
+margin-left: -40px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+.location{
+    background-color: transparent;
+ margin-right: -40px;
+ border: none;
+ z-index: 1;
+}
+#detail {
+    height: 140px;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  #detail>div{
+    width: 11%;
+    font-weight: 600;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+   
+  }
+  #detail>div:focus{
+    border: 3px solid rgb(0,166,250);
+    margin-top: -3px;
+    padding-top:10px ;
+    border-radius: 10px;
+  }
+  .tempChart{
+    padding: 10px;
+    padding-top: 30px;
+    width: 55%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    border-radius: 7px;
+    margin-bottom: 40px;
+
+
+
+  }
+ .tempChartTemp{
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: start;
+    width: 95%;
+    display: flex;
+    height: 60px;
+  }
+  .tempChartTemp>span{
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 15px;
+    
+  }
+ 
+  .PressureHumidity{
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .PressureHumidity>div{
+    width: 47%;
+    padding: 7px;
+    text-align: start;
+    background-color: rgb(243,251,255);
+  }
+  .humidity,.pressure{
+    font-weight: 600;
+  }
+
+  .sunriseSunset{
+    display: flex;
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+ 
+  .sunset,.sunrise{
+font-weight: 600;
+  }
+
+  .spinner{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+.mapdiv{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 55%;
+  height: 500px;
+  margin:auto ;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 10px;
+}
+  .map{
+    width: 100%;
+    height: 500px;
+  border: none;
+  }
+
+  @media screen and (max-width: 600px){
+    .searchbar{
+      width: 90%;
+    }
+    #detail{
+      overflow: scroll;
+      width: 90%
+    }
+    #detail>div{
+      width: 300px;
+      border: 10px solid transparent;
+      
+    }
+    .tempChart{
+      width: 85%;
+      border-radius: 7px;
+    }
+  
+    .tempChartTemp>span{
+    
+      margin-right: 5px;
+
+    }
+   
+    #detail>div:focus{
+      border: 3px solid rgb(0,166,250);
+      height: 120px;
+      margin-top: 8px;
+    }
+    .detailIcon{
+      margin-left: -8px;
+     
+    }
+    .PressureHumidity>div{
+      width: 44%;
+    }
+    .mapdiv{
+      width: 83%;
+      height: 300px;
+    }
+    .map{
+      border: none;
+      width: 100%;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  } */
